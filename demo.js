@@ -1,8 +1,9 @@
-var imdb = require('./imdb');
+var imdb = require('./lib/imdb');
 
 // Look up the show Warehouse 13 and the the last episode 
 // of the second to last season.
 imdb.title('tt1132290', function(err, show) {
+	if (err) return console.error(err);
 	console.log(show);
 
 	imdb.episodes(show.id, show.seasons - 1, function(err, episodes) {

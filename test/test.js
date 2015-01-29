@@ -48,7 +48,7 @@ describe("title", function() {
 			should.not.exist(err);
 
 			title.should.have.property('synopsis');
-			title.synopsis.should.eql("At the behest of his new employers, Dr. Suresh travels to Haiti to treat a potential virus victim. The patient turns out to be a familiar face...");
+			title.synopsis.should.eql("At the behest of his new employers, Dr. Suresh travels to Haiti to treat a potential virus victim. The patient turns out to be a familiar face. Claire's secret may be out when a fellow ...");
 
 			done();
 		});
@@ -91,17 +91,21 @@ describe('episodes', function() {
 			episodes.length.should.equal(12);
 
 			episodes[0].should.eql({
+				airDate: '2009-07-07',
+				id: 'tt1417762',
+				image: 'http://ia.media-imdb.com/images/M/MV5BMTI0ODI4NzQxMV5BMl5BanBnXkFtZTcwMDE1Njk2Mg@@._V1_SX200_CR0,0,200,112_AL_.jpg',
+				name: 'Pilot',
 				number: 1,
-				name: "Pilot",
-				airDate: "2009-07-07",
-				id: "tt1417762"
+				title: 'S1, Ep1'
 			});
 
 			episodes[3].should.eql({
+				airDate: '2009-07-28',
+				id: 'tt1431669',
+				image: 'http://ia.media-imdb.com/images/M/MV5BMTk0MzY3NzA4OF5BMl5BanBnXkFtZTcwMjI2MjQ3Mg@@._V1_SX200_CR0,0,200,112_AL_.jpg',
+				name: 'Claudia',
 				number: 4,
-				name: "Claudia",
-				airDate: "2009-07-28",
-				id: "tt1431669"
+				title: 'S1, Ep4'
 			});
 
 			done();

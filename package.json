@@ -1,5 +1,5 @@
 {
-    "name": "imdb",
+    "name": "imdbjs",
     "version": "1.0.0",
     "description": "IMDB scraper for node",
     "engine": "node >= 0.6.0",
@@ -12,12 +12,15 @@
         "debug" : "x"
     },
     "devDependencies": {
-    	"mocha" : "x",
+        "mocha" : "x",
         "should" : "x"
     },
     "repository" : {
         "type": "git",
-        "url" : "http://github.com/abrkn/imdb.git"
+        "url" : "http://github.com/masihyeganeh/imdb.git"
     },
-    "main" : "./lib/imdb.js"
+    "main" : "./lib/imdb.js",
+    "scripts": {
+        "test": "mocha --no-timeouts ./test/test.js"
+    }
 }
