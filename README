@@ -2,9 +2,10 @@ Node module for querying IMDB.com
 
 Usage:
 
-// List the episodes of the second season of Seinfeld.
+// List the episodes of the third season of Frasier.
 var imdb = require('imdbjs');
-imdb.episodes('tt0098904', 2, function(err, episodes) {
+
+imdb.episodes('tt0106004', 2, function(err, episodes) {
 	console.log(episodes);	
 });
 
